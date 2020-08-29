@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+
+@font-face{
+  font-family: Josefin;
+  src: url(Josefin.ttf);
+}
+
+body{
+  background-color: white;
+  height: 250%;
+  overflow-x: hidden;
+}
+
+#inner_main_menu{
+  margin: 0 auto;
+  width: 80%;
+}
+
+#inner_main_menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  padding-top: 4%;
+}
+
+#inner_main_menu ul li{
+  float: none;
+  display: inline-block;
+}
+
+#inner_main_menu ul li:nth-child(1){
+  float: left;
+  position: relative;
+}
+
+#inner_main_menu ul li:nth-child(2){
+  float: left;
+  position: relative;
+}
+
+#inner_main_menu ul li a{
+  color: black;
+  font-size: 120%;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 10px 70px;
+}
+
+#inner_main_menu ul li a:hover{
+  color: #fc006c;
+}
+
+#main_menu{
+  width: 100%;
+  position: relative;
+}
+
+.logo_area{
+  width: 23%;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  margin-left: -11.5%;
+  text-align: center;
+}
+
+/*PROFILE CARDS*/
+@import url(https://fonts.googleapis.com/css?family=Open+sans);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+/*.snip1515 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  margin: 15px;
+  margin-top: 120px;
+  max-width: 30%;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  line-height: 1.4em;
+  font-size: 14px;
+  box-shadow: none !important;
+  float: left;
+  left: 2%;
+  top: 3%;
+}
+
+.snip1515 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snip1515 .profile-image{
+  display: inline-block;
+  width: 80%;
+  z-index: 1;
+  position: relative;
+  padding: 10px;
+  border: 2px solid #e4ddef;
+}
+
+.snip1515 .profile-image img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1515 figcaption{
+  width: 100%;
+  background-color: #F2F2F2;
+  color: #555;
+  padding: 125px 25px 25px;
+  margin-top: -100px;
+  display: inline-block;
+}
+
+.snip1515 h3,
+.snip1515 h4,
+.snip1515 p{
+  margin: 0 0 5px;
+}
+
+.snip1515 h3 {
+  font-weight: 600;
+  font-size: 1.3em;
+  font-family: 'Playfair Display', Arial, sans-serif;
+}
+
+.snip1515 h4 {
+  color: #8c8c8c;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.snip1515 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+/*FLIPCARD*/
+/*.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}*/
+
+ .all-profiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+.profiles {
+  display: flex;
+  margin-left: 15%;
+  margin-top: 2%;
+  /* flex-direction: row; */
+  /* justify-content: center; */
+}
+
+/* Makes all profile text align to the left */
+.profile-text {
+  text-align: left;
+  margin-left: 3%;
+  margin-top: -1%;
+}
+
+/* Sets bio text to 115% and a top margin of 2% */
+.bio {
+  font-size: 115%;
+  margin-top: 2%;
+  margin-right: 15%;
+}
+
+a{
+  text-decoration: none;
+  color: #787282;
+}
+
+.tablink {
+  background-color: #e7faff;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  position: relative;
+  margin-top: 6%;
+}
+
+.margin{
+  margin-left: 25%;
+}
+
+.tablink:hover {
+  background-color: #e4ddef;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: white;}
+#News {background-color: white;}

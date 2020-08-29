@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+
+@font-face{
+  font-family: Josefin;
+  src: url(Josefin.ttf);
+}
+
+body{
+  background-color: white;
+  height: 250%;
+  overflow-x: hidden;
+}
+
+#inner_main_menu{
+  margin: 0 auto;
+  width: 80%;
+}
+
+#inner_main_menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  padding-top: 4%;
+}
+
+#inner_main_menu ul li{
+  float: none;
+  display: inline-block;
+}
+
+#inner_main_menu ul li:nth-child(1){
+  float: left;
+  position: relative;
+}
+
+#inner_main_menu ul li:nth-child(2){
+  float: left;
+  position: relative;
+}
+
+#inner_main_menu ul li a{
+  color: black;
+  font-size: 120%;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 10px 70px;
+}
+
+#inner_main_menu ul li a:hover{
+  color: #fc006c;
+}
+
+#main_menu{
+  width: 100%;
+  position: relative;
+}
+
+.logo_area{
+  width: 23%;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  margin-left: -11.5%;
+  text-align: center;
+}
+
+
+
+#main1{
+  width: auto;
+  height: 35%;
+}
+
+.poptext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:500%;
+    font-family: 'Montserrat', sans-serif;
+  	letter-spacing:0.1em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    text-shadow:
+  						8px 8px #a6a7d8,
+  						20px 20px white;
+}
+
+/*.smalltext{
+  color: #beffff;
+  position: relative;
+  top: 70%;
+  left: 25%;
+}*/
+
+
+#main2{
+  position: relative;
+  margin-top: -1%;
+  height: 25%;
+  background-color: #e4ddef;
+}
+
+.container {
+  position: relative;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-family: "Lucida Console", Courier, monospace;
+  letter-spacing: -0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #3b1ca4;
+  
+
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+
+
+.text-box {
+  margin: 0;
+  top: -15%;
+  font-weight: bold;
+  position: relative;
+  left: 38%;
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    padding: 15px 80px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #3b1ca4;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+#main3{
+  background-color: white;
+  margin-top: 0;
+  position: relative;
+  height: 34%;
+}
+
+.textContainer{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  left: 25%;
+  font-family: Josefin;
+  color: black;
+  font-size: 120%;
+}
+
+a{
+  text-decoration: none;
+  color: red;
+}
+

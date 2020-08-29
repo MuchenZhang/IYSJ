@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900i&display=swap');
+
+@font-face{
+  font-family: Josefin;
+  src: url(Josefin.ttf);
+}
+
+body{
+  background-color: white;
+  height: 180%;
+  overflow-x: hidden;
+}
+
+#inner_main_menu{
+  margin: 0 auto;
+  width: 80%;
+}
+
+#inner_main_menu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+  padding-top: 4%;
+}
+
+#inner_main_menu ul li{
+  float: none;
+  display: inline-block;
+}
+
+#inner_main_menu ul li:nth-child(1){
+  float: left;
+  position: relative;
+}
+
+#inner_main_menu ul li:nth-child(2){
+  float: left;
+  position: relative;
+}
+
+#inner_main_menu ul li a{
+  color: black;
+  font-size: 120%;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 10px 70px;
+}
+
+#inner_main_menu ul li a:hover{
+  color: #fc006c;
+}
+
+#main_menu{
+  width: 100%;
+  position: relative;
+}
+
+.logo_area{
+  width: 23%;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  margin-left: -11.5%;
+  text-align: center;
+}
+
+#main1{
+  height: 90%;
+  width: 50%;
+  margin-top: 3%;
+  margin-left: 25%;
+}
+
+.texts{
+  text-align: left;
+  z-index:100;
+  position: relative;
+  font-size: 120%;
+}
+
+a{
+  text-decoration: none;
+  color: red;
+}
+
+h1{
+  text-align: center;
+}
+

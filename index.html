@@ -1,0 +1,108 @@
+<html>
+
+<head>
+  <title>International Youth Science Journal</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link rel="shortcut icon" type="image" href="img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+<div id="main_menu">
+
+  <div class="logo_area">
+    <a href="index.html"><img src="img/icon.png" alt="logo" height=40%></a>
+  </div>
+
+  <div class="collapse" id="inner_main_menu">
+    <ul>
+      <li><a href="articles.html">Articles</a></li>
+      <li><a href="join.html">Join Us</a></li>
+      <li><a href="executive.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div id="main1">
+  <span class="poptext">Intl. Youth Science Journal</span>
+</div><hr>
+
+<div id="main2">
+    <div class="container">
+      <p>We write articles on <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+    </div>
+
+    <div class="text-box">
+        <a href="articles.html" class="btn btn-white btn-animate">READ ARTICLES >></a>
+      </div>
+
+<script>
+    const typedTextSpan = document.querySelector(".typed-text");
+    const cursorSpan = document.querySelector(".cursor");
+
+    const textArray = ["computer science", "chemistry", "biology", "physics", "math", "technology"];
+    const typingDelay = 200;
+    const erasingDelay = 100;
+    const newTextDelay = 2000; // Delay between current and next text
+    let textArrayIndex = 0;
+    let charIndex = 0;
+
+    function type() {
+     if (charIndex < textArray[textArrayIndex].length) {
+        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+       typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+       charIndex++;
+       setTimeout(type, typingDelay);
+     } 
+     else {
+       cursorSpan.classList.remove("typing");
+       setTimeout(erase, newTextDelay);
+     }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+       if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+       typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+        charIndex--;
+        setTimeout(erase, erasingDelay);
+     } 
+      else {
+        cursorSpan.classList.remove("typing");
+       textArrayIndex++;
+       if(textArrayIndex>=textArray.length) textArrayIndex=0;
+       setTimeout(type, typingDelay + 1100);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+      if(textArray.length) setTimeout(type, newTextDelay + 250);
+    });
+</script>
+
+
+
+</div>
+
+
+<div id="main3">
+  <div class="textContainer">
+    <h2>IMPORTANT ANNOUNCEMENT</h2>
+    <p>The International Youth Science Journal is currently recruiting student writers! Student writers are expected to produce high quality science articles biweekly. If you are interested in a writing position, visit our <a href="join.html">"Join Us"</a> page to apply. The deadline for the writing application is by June 1st 2020, at 11:59 PM China Standard Time.</p>
+    <br>
+    <h2>For Students</h2>
+    <p>We aim to provide secondary students with bite-sized science content that can hopefully inspire them to further explore their interests in the STEM field. All of our writers and editors are high schoolers, and we aim to provide digestible articles that make science both more interesting and more accessible.</p>
+    <br>
+    <h2>For Educators</h2>
+    <p>Here at IYSJ, we believe in the importance of scientific communication and that making knowledge understandable to everyone is arguably as important as generating the knowledge themselves. Our goal is to promote science literacy so feel free to use/reuse/adapt any of our articles for any educational purposes as long as you give credit. All articles in the International Youth Science Journal(IYSJ) are fact-checked and well-cited. Through our policies on article sources, we hope to become a high-quality source of science literature for secondary students.</p>
+  </div>
+</div>
+
+</body>
+
+</html>
